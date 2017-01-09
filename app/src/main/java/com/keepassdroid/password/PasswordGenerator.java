@@ -43,7 +43,7 @@ public class PasswordGenerator {
 	}
 	
 	public String generatePassword(int length, boolean upperCase, boolean lowerCase, boolean digits, boolean minus, boolean underline, boolean space, boolean specials, boolean brackets) throws IllegalArgumentException{
-		// Desired password length is 0 or less
+		// Desired password length is invalid
 		if (length <= 0) {
 			throw new IllegalArgumentException(cxt.getString(R.string.error_wrong_length));
 		}
